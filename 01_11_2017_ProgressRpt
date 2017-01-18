@@ -1,0 +1,33 @@
+done on 1/11/2017
+
+1. Welcome
+
+2. Creating ur critter
+func initialize() {   // The code in this function runs first    nickname = "Lassie"}
+
+3. Setting up your critter
+var store info to use later
+func stores code that can be run used by other parts of the pgm
+func functionName() {    // Function definition goes here  }
+
+func setupCritterStats()
+{
+    myElement = "Leaf" // "Leaf" or "Fire" or "Water"
+    myLevel = 1             // can change level to 1, 2, 3, 4, 5   OK to use = 2+3, =2-3, =15/5
+}
+Call a function to make it run
+
+4. Customizing ur critter
+func initialize()
+{
+    // The code in this function runs first
+    nickname = "Lassie"
+    setupCritterStats()  //adding this calls the setupCritterStats() fn
+}
+// Leaf competes w/ Water
+// Fire compets w/ Leaf
+// Water competes w/ Fire
+
+5. Ur critter's 1st move
+a. Handler fns that auto call when action happens
+b. fns Library u call when action happens
