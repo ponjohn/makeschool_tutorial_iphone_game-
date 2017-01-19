@@ -1,0 +1,72 @@
+1-18-2017_ProgressRpt
+2. Creating ur critter
+string = sequence of letters
+var = place to store/save info to be used by code
+// change"Clould" to "Lassie"
+
+3. Setting up ur critter
+func functionName()
+{ 
+     //function definition goes here
+}
+func - declares new function; Name of function - functionName
+functions - stored code to be run by other parts of the pgm or use more than once (many times)
+
+func setupCritterStats()
+{    
+     myElement = "Leaf"  //changed from "none" to "Leaf"; Fire, Water
+     myLevel = 1
+}
+
+To call a fn, functionName()
+
+4. Customizing ur critter
+func initialize()
+{    // The code in this function runs first
+    nickname = "Lassie"
+    setupCritterStats()  //added to initialize to call the function setupCritterStats(), now see Leaf critter elenment
+}
+// change the element by renaming myElement = "Leaf" (or "Fire", "Water")
+// Change the level by rename myLevel =1 (or 1, 2, 3, 4, 5) or (2+3) for 5
+
+5. Ur critter's first move
+teaching critter to dash
+Handlers - fn that auto call when something happens
+Libraries - fn written by others that can by used by the code
+
+func dashButtonPressed()
+{
+    performDash()    
+}
+
+6. It's super effective!
+if-then-else statements
+if statement
+{
+    // code that runs if the statement is true, can use > or < to compare #s
+}
+else
+{
+    // code that runs if the statement is false, == to check if 2 things r the same
+}
+
+7. Swipe over & over
+func functionName(parameterName: parameterType)
+{
+    // function code goes here
+}
+
+func swipeButtonPressed(numberOfSwipes: Int)  //Int = whole number
+{
+    for counter in 1...numberOfSwipes
+    {
+        performSwipe()
+    }
+}
+
+for counter in startingNumber...endingNumber  //For-Loops
+{
+    // for-loop code goes here  
+}
+
+8. Quick recap
