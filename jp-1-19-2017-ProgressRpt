@@ -1,0 +1,98 @@
+jp-1-19-2017-ProgressRpt
+
+8. Quick recap
+Variables store info for later use
+in this pgm, var stored critter's nickname & element
+
+Functions r pieces of code that can be called by other parts of the pgm.
+made func setupCritterStats(); func dashButtonPressed(); 
+     func elementalButtonPressed(); swipeButtonPressed(numberOfSwipes: Int)
+     
+If-then-else statementws allow our code to react to things.
+Used to check if our elemental move would work against our opponent.
+If it would, we used it but if it wouldn't we used Swipe instead.
+
+For-Loops allow code to be repeated.
+We added a for-loop to use the Swipe a random # of times in a row.
+------------------------------------------------------------------------ working code up to step 8.
+func initialize()
+{   // The code in this function runs first
+    nickname = "Lassie"
+    setupCritterStats()  }
+
+func setupCritterStats()
+{   myElement = "Leaf"
+    myLevel = 5  }
+
+// dashButtonPressed called function from a Library
+func dashButtonPressed()
+{   performDash()   }
+
+
+// elementalButtonPressed made function using if-then-else statements
+func elementalButtonPressed()
+{
+    if elementMyOpponentIsWeakAgainst == myElement
+    {
+        performElemental()
+    }
+    else
+    {
+        performDash()
+    }
+}
+
+
+// swipeButtonPressed made function using for-loop
+func swipeButtonPressed(numberOfSwipes: Int)
+{
+    for counter in 1...numberOfSwipes
+    {
+        performSwipe()
+    }
+}
+
+
+9. Sing Move - only effective if ur critter level > than opponent
+Put the opponent to sleep
+
+func singButtonPressed()
+{
+    if myLevel > opponentLevel
+    {
+        for counter in 1...(myLevel - opponentLevel)
+        {
+            performSing()
+        }
+    }
+    else
+    {
+        //my code here
+        myLevel = (opponentLevel + 5)
+    }    
+}
+
+Final Recap
+summarize what we learned
+Variables - a way to store info
+Functions - a way to reuse code or call code from other parts of the pgm
+Handlers - fn that r called when a specific event occurs
+Libraries - libraries store fn that someone else wrote (for u to use)
+if-then-else statements - alter the flow of the pgm based on different conditions
+for-loop - repeat the same chunk of code multiple times
+
+------------------------------DONE 1-19-2017 ----------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
